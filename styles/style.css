@@ -1,0 +1,142 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+#logo{
+  width: 200px;
+}
+header h1{
+  font-size: 20px;
+}
+
+html, body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#logo{
+    width: 200px;
+}
+header h1{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+header{
+    background-color: #141414;
+    padding-inline: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #9e0000;
+    box-shadow: 0px 2px 30px black;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 150px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px black;
+
+}
+
+.card:hover {
+    opacity: 0.8;
+}
+
+#data-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #640202;
+    border: 3px solid black;
+    width: 400px;
+    height: 650px;
+}
+
+#preview-card{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #c20000;
+    box-shadow: inset 0px 0px 500px #3d0000;
+    height: 650px;
+}
+
+#img-preview-card{
+  height: 200px;
+  animation: shine 1s infinite alternate;
+}
+
+@keyframes shine{
+  0% {
+    box-shadow: 0px 0px 2px white;
+    width: 1px;
+  }
+
+  15% {
+    box-shadow: 0px 0px 5px white;
+    width: 30px;
+  }
+
+  30% {
+    box-shadow: 0px 0px 10px white;
+    width: 50px;
+  }
+
+  45% {
+    box-shadow: 0px 0px 12px white;
+    width: 70px;
+  }
+
+  60% {
+    box-shadow: 0px 0px 10px white;
+    width: 100px;
+  }
+
+  75% {
+    box-shadow: 0px 0px 5px white;
+    width: 140px;
+  }
+  100% {
+    box-shadow: 0px 0px 2px white;
+    width: 150px;
+  }
+}
+
+#stats-card{
+    text-align: center;
+    align-items: center;
+    background-color: red;
+    box-shadow: inset 0px 0px 200px #470000;
+    border: 3px solid black;
+    
+    width: 300px;
+}
+
+#name-card{
+  font-size: 30px;
+}
+
+#deck-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: auto;
+    height: 650px;
+    background-color: #636363;
+    box-shadow: inset 0px 0px 1000px black;
+}
+
+@media (max-width:300px) {
+    #data-card{
+        width: 100px;
+    }    
+}
